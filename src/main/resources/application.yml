@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: 'jdbc:mysql://localhost:12345/Application1'
+    username: root
+    password: hamza
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.ddl-auto: update
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: true
+    show-sql: true
+
+student:
+  endpoint:
+    account: http://demo7675902.mockable.io/student/account
+    address: http://demo7675902.mockable.io/student/address
+    grades: http://demo7675902.mockable.io/student/grades
+    courses: http://demo7675902.mockable.io/student/courses
+
+
+
+
+
+
